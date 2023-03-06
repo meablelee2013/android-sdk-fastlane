@@ -1,7 +1,10 @@
-FROM runmymind/docker-android-sdk:latest
+FROM mingc/android-build-box:latest
 
 ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
+ENV jenv local 11 
+
+
 
 RUN apt-get update
 RUN apt-get install -y build-essential ruby-full
