@@ -1,14 +1,16 @@
-FROM mingc/android-build-box:latest
+#https://github.com/docker-android-sdk/android-31
+FROM androidsdk/android-31:latest
+
+
 
 ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
-ENV jenv local 11 
 
 
 
 RUN apt-get update
 RUN apt-get install -y build-essential ruby-full
-RUN gem install bundler
+RUN gem install bundler -v 2.3.26
 #RUN gem install fastlane
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
