@@ -31,7 +31,6 @@ RUN rm -rf ruby-3.0.0.tar.gz ruby-3.0.0
 
 RUN gem update --system 3.2.3
 RUN gem install bundler -v 2.4.3
-
 RUN gem install fastlane -v 2.212.1
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
