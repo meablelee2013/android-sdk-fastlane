@@ -2,10 +2,6 @@ FROM androidsdk/android-31:latest
 
 # ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
-# ENV jenv local 11 
-
-# RUN apt-get update
-
 
 # RUN apt-get update
 
